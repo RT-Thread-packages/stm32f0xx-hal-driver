@@ -44,6 +44,7 @@ if GetDepend(['RT_USING_SPI']):
     src += [os.path.join(src_path, 'stm32f0xx_ll_spi.c')]
 
 if GetDepend(['RT_USING_USB']):
+    src += [os.path.join(src_path, 'stm32f0xx_ll_usb.c')]
     src += [os.path.join(src_path, 'stm32f0xx_hal_pcd.c')]
     src += [os.path.join(src_path, 'stm32f0xx_hal_pcd_ex.c')]
 
